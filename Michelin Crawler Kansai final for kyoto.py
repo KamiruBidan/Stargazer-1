@@ -87,11 +87,6 @@ for pp in range(1,20):
                 header = list(restaurant_details.keys())
                 shopname_detail = restaurant_details['shopname']
                 insertOp(cursor, 'MichelinKansai', header, details)
-                #sql_insert = 'insert into MichelinKansai (shopname) values ("%s")' %shopname_detail
-                #print (sql_insert)
-                #Michelinkansai是之前建的.db文件，上面已经连接上了
-                #cursor.execute(sql_insert)
-                #sql_update = 
                 cursor.close()
                 conn.commit()
                 #执行SQL写入
